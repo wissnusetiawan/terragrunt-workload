@@ -38,7 +38,7 @@ jobs:
 
       - name: Generate New Version and Update Changelog
         run: |
-          npx standard-version --release-as major
+          npx standard-version --no-verify
           git push --follow-tags origin main
 
       - name: Get Latest Tag
