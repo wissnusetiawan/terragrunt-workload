@@ -92,7 +92,7 @@ jobs:
 
   live-check:
     name: Live Check
-    needs: notify-release
+    needs: create-release
     environment: live
     runs-on: ubuntu-latest
     steps:
